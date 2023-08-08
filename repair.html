@@ -1,0 +1,157 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="STYLE/repair.css">
+    <script src="test.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-auth-compat.js"></script>
+    <!-- *******************************************************************************************
+       * TODO(DEVELOPER): Paste the initialization snippet from this dialog box:
+       * Firebase Console > Project Settings > Add App > Web.
+       ***************************************************************************************** -->
+    <script src="https://www.gstatic.com/firebasejs/ui/6.0.2/firebase-ui-auth.js"></script>
+    <title>REPAIR BOOKING</title>
+</head>
+<body>
+    <form id="contactForm" action="#">
+  
+        <header>
+        
+          <div id="umb-logo">
+          <h1> <a href="index.html"> LOGO</a></h1>
+        </div>
+          
+          <h2>Repair Order Form</h2>
+          <div></div>
+        
+        </header>
+        
+        <div>
+          <div></div>
+        </div>
+
+        <div>
+          <label class="desc" id="title1" for="Field1">Name</label>
+          <div>
+            <input id="Field1" name="Field1" type="text" class="field text fn" value="" size="8" tabindex="1">
+          </div>
+        </div>
+      
+        <div>
+          <label class="desc" id="title1" for="Field1">Email</label>
+          <div>
+            <input id="Field2" name="Field1" type="email" class="field text fn" value="" size="8" tabindex="1">
+          </div>
+        </div>
+
+        <div>
+            <label class="desc" id="title1" for="Field1">Phone Number</label>
+            <div>
+              <input id="Field3" name="Field1" type="text" class="field text fn" value="" size="8" tabindex="1">
+            </div>
+          </div>
+          
+        <div>
+            <label class="desc" id="title106" for="Field106">
+                 Category
+            </label>
+            
+            <div class="container">
+                            
+              <ul>
+              <li>
+                <input type="radio" id="f-option" name="selector" onclick="javascript:laptopCheck();">
+                <label for="f-option">Desktop</label>
+                
+                <div class="check"></div>
+              </li>
+              
+              <li>
+                <input type="radio" id="s-option" name="selector"onclick="javascript:laptopCheck();">
+                <label for="s-option">Laptop</label>
+                
+                <div class="check"><div class="inside"></div></div>
+              </li>
+              
+            </ul>
+            </div>
+
+          </div>
+          <div id="laptop" style="visibility: hidden;" >
+            <div>
+              <label class="desc" id="title1" for="Field1">Laptop brand</label>
+              <div>
+                <input id="Field5" name="Field1" type="text" class="field text fn" value="" size="8" tabindex="1">
+              </div>
+            </div>
+            
+              <div>
+              <label class="desc" id="title1" for="Field1">Laptop Model</label>
+              <div>
+                <input id="Field6" name="Field1" type="text" class="field text fn" value="" size="8" tabindex="1">
+              </div>
+            </div>
+            
+            <div>
+              <label class="desc" id="title1" for="Field1">Service tag #</label>
+              <div>
+                <input id="Field7" name="Field1" type="text" class="field text fn" value="" size="8" tabindex="1">
+              </div>
+            </div>
+        </div>
+        <div id="desktop" style="visibility: hidden;" >
+          <div>
+            <label class="desc" id="title1" for="Field1">CPU Model</label>
+            <div>
+              <input id="Field8" name="Field1" type="text" class="field text fn" value="" size="8" tabindex="1">
+            </div>
+          </div>
+          </div>
+          <div>
+            <label class="desc" id="title106" for="Field106">
+              Complaint Category
+            </label>
+            <div>
+            <select id="Field9" name="Field106" class="field select medium" tabindex="11"> 
+              <option value="frozen">frozen  </option>
+              <option value="stuck application  ">stuck application  </option>
+              <option value="Computer screen">ThComputer screen is blank, rebooting issues, Virus scans for malwareird  </option>
+              <option value="adware  ">adware  </option>
+              <option value="viruses, Install driver  ">viruses, Install driver  </option>
+              <option value="Thisoftware updates, OS Installationrd  ">software updates, OS Installation  </option>
+              <option value="Upgrade">Upgrade, Formatting, Drive fragmentation, Storage issues, RAM issues, Monitor  </option>
+              <option value="Display issue">Display issue, Keyboard issue, Mouse  </option>
+              <option value="Touch ">Touch pad issue, Overheating issue  </option>
+              <option value="Internet">Internet Wifi connectivity issues, Firewall issues  </option>
+
+
+            </select>
+            </div>
+          </div>
+            
+          <div>
+        
+       
+          
+        <div>
+          <label class="desc" id="title4" for="Field4">
+            Problem Description: Give text area to take user input up to 500 words.
+          </label>
+        
+          <div>
+            <textarea id="Field10" name="Field4" spellcheck="true" rows="10" cols="50" tabindex="4"></textarea>
+          </div>
+        </div>
+       
+          <div>
+              <div>
+                <input id="saveForm" name="saveForm" type="submit" value="Submit" onclick="javascript:formSubmit();">
+          </div>
+          </div>
+        
+      </form>
+      
+</body>
+</html>
